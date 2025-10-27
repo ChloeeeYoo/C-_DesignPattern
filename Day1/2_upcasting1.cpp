@@ -29,6 +29,7 @@ int main()
 	// 핵심 #3. Animal* 인 p3로는 Animal 로 부터 상속된 멤버만 접근가능
 	// => Dog 가 추가한 고유 멤버는 접근 안됨.
 	// => 이유는 "C++ 은 static type check" 언어이므로
+	// -> compile 할 때 p3가 가리키는 &d가 dog의 주소인 지 모른다.
 	
 	// static type check  : 컴파일 시간에 타입을 확인하는 것
 	//						(C++, Java, C# 등의 대부분의 언어)
@@ -52,6 +53,7 @@ int main()
 	// 조사할수 없나요 ??
 	// => 다음 예제
 }
+
 
 
 
